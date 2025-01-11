@@ -1,4 +1,3 @@
-from selenium.webdriver.support.wait import WebDriverWait
 from locators.questions_locators import QuestionLocators
 from pages.base_page import BasePage
 import allure

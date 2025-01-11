@@ -1,9 +1,10 @@
 import pytest
 from selenium import webdriver
+from data import Url
 
 @pytest.fixture
 def driver():
     driver = webdriver.Firefox()
-    driver.get('https://qa-scooter.praktikum-services.ru/')
+    driver.get(Url.url_scooter)
     yield driver
     driver.quit()

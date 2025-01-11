@@ -16,12 +16,8 @@ class LogoPage(BasePage):
     def click_logo_yandex(self):
         self.click_element(LogoLocators.yandex_logo)
 
-    def switch_tab(self):
-        original_window = self.driver.current_window_handle
-        for handle in self.driver.window_handles:
-            if handle != original_window:
-                self.driver.switch_to.window(handle)
-                break
+    def switch_tab_yandex(self):
+        self.switch_tab()
 
     def wait_visibility_dzen(self):
         self.wait_visibility_element(LogoLocators.dzen_logo)

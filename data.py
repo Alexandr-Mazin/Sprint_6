@@ -17,3 +17,7 @@ class TextData:
     test_user_1 = ['Макс', 'Ферстаппен', 'Первая', 'Черкизовская', '+77777777777', '11.01.2025', 'Офицер ордена Оранских-Нассау']
 
     test_user_2 = ['Оркадий', 'Под', 'Вторая', 'Сокольники', '+8888888888', '11.01.2025', 'Буду зелёным']
+
+class Url:
+    url_scooter = 'https://qa-scooter.praktikum-services.ru/'
+    url_yandex = 'https://dzen.ru/?yredirect=true'

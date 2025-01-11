@@ -9,6 +9,7 @@ class TestMainResponse:
 
     @allure.description(
         'Проверяем что когда нажимаешь на стрелочку, открывается соответствующий текст в разделе «Вопросы о важном»')
+    @allure.title('Проверка текста в блоке «Вопросы о важном»')
     @pytest.mark.parametrize('question_number, expected_answer', TextData.questions_response)
     def test_response_text(self, driver, question_number, expected_answer):
         questions_page = QuestionsPage(driver)

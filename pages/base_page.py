@@ -28,7 +28,11 @@ class BasePage:
 
     #Перейти на другую вкладку
     def switch_tab(self):
-        self.driver.switch_to.window(self.driver.window_handles[1])
+        original_window = self.driver.current_window_handle
+        for handle in self.driver.window_handles:
+            if handle != original_window:
+                self.driver.switch_to.window(handle)
+                break
 
     #Проверить отображение элемента
     def check_displaying_element(self, locator):

@@ -9,6 +9,7 @@ class TestOrder:
 
     @allure.description(
         'Проверяем что позитивный сценарий оформления заказа с двумя наборами данных')
+    @allure.title('Проверка успешного оформления заказа')
     @pytest.mark.parametrize('button, test_data',
                              [
                                 (OrderLocators.order_button_1, TextData.test_user_1),
